@@ -15,4 +15,4 @@ class MainActivity : AppCompatActivity() {
         val titleTextView = findViewById<TextView>(R.id.titleTextView)
         val contactLinearLayout = findViewById<LinearLayout>(R.id.contactLinearLayout)
 
-
+        imageView.setImageResource(R.drawable.android_logo)
