@@ -16,3 +16,13 @@ class MainActivity : AppCompatActivity() {
         val contactLinearLayout = findViewById<LinearLayout>(R.id.contactLinearLayout)
 
         imageView.setImageResource(R.drawable.android_logo)
+
+        val contacts = arrayOf("Phone: +380505050505", "Email: anton.sapozhnik@gmail.com", "Address: Lutsk")
+
+        for (contact in contacts) {
+            val contactTextView = TextView(this)
+            contactTextView.text = contact
+            contactLinearLayout.addView(contactTextView)
+        }
+    }
+}
